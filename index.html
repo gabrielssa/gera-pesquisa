@@ -1,0 +1,135 @@
+```<!DOCTYPE html>
+<html>
+<head>
+    <title>Abra Links em Nova Aba</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <button id="linkButton">Clique para Abrir o Link</button>
+    </div>
+
+    <script>
+        const objetos = [
+            'Laranja',
+            'Borracha',
+            'Lapis',
+            'Caderno',
+            'Caneta',
+            'Computador',
+            'Cadeira',
+            'Mesa',
+            'Copo',
+            'Prato',
+            'Garfo',
+            'Facas',
+            'Colher',
+            'Relogio',
+            'Celular',
+            'Livro',
+            'Oculos',
+            'Chave',
+            'Carteira',
+            'Escova de dente',
+            'Pasta de dente',
+            'Xampu',
+            'Sabonete',
+            'Toalha',
+            'Escova de cabelo',
+            'Camiseta',
+            'Calca',
+            'Tenis',
+            'Meias',
+            'Bone',
+            'Mochila',
+            'Garrafa de agua',
+            'Controle remoto',
+            'Lampada',
+            'Vela',
+            'Fosforos',
+            'Tesoura',
+            'Papel',
+            'Almofada',
+            'Cobertor',
+            'Travesseiro',
+            'Panela',
+            'Frigideira',
+            'Micro-ondas',
+            'Geladeira',
+            'Escova de maquiagem',
+            'Batom',
+            'Pente',
+            'Xicara',
+            'Prato fundo',
+            'Lousa',
+            'Giz',
+            'Papel higienico',
+            'Sabao em po',
+            'Esponja',
+            'Regua',
+            'Isqueiro',
+            'Gravata',
+            'Meio de transporte',
+            'Terninho',
+            'Vestido',
+            'Terno',
+            'Blusa',
+            'Caneca',
+            'Cadeado',
+            'Guarda-chuva',
+            'Panela de pressao',
+            'Porta-retrato',
+            'Quadro',
+            'Caneca',
+            'Fone de ouvido',
+            'Escova de limpeza',
+            'Vassoura',
+            'Pa',
+            'Espelho',
+            'Sapatos',
+            'Sapateira',
+            'Fone de ouvido',
+            'Bicicleta',
+            'Carro',
+            'Bola',
+            'Luvas',
+            'Violao',
+            'Cama',
+            'Lencol',
+            'Almofada de pescoco',
+            'Cobertor eletrico',
+            'Xadrez',
+            'Baralho',
+            'Roupao',
+            'Teclado',
+            'Mouse',
+            'Mousepad',
+            'Fone de ouvido sem fio',
+            'Balde',
+            'Pa',
+            'Balanca',
+            'Papel toalha',
+            'Cadeira de balanco',
+            'Piscina'
+        ];
+
+        const getRandomSearchQuery = () => {
+            const randomIndex = Math.floor(Math.random() * 3); // 0, 1, ou 2 aleatoriamente
+            if (randomIndex === 0) {
+                return 'https://www.bing.com/search?q=como+usar+' + objetos[Math.floor(Math.random() * objetos.length)];
+            } else if (randomIndex === 1) {
+                return 'https://www.bing.com/search?q=o+que+e+' + objetos[Math.floor(Math.random() * objetos.length)];
+            } else {
+                return 'https://www.bing.com/search?q=para+que+serve+' + objetos[Math.floor(Math.random() * objetos.length)];
+            }
+        };
+
+        let linkButton = document.getElementById('linkButton');
+
+        linkButton.addEventListener('click', () => {
+            const searchQuery = getRandomSearchQuery();
+            window.open(encodeURI(searchQuery), '_blank');
+        });
+    </script>
+</body>
+</html>
+```
