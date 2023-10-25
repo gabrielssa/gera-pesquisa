@@ -10,126 +10,288 @@
 
     <script>
         const objetos = [
-            'Laranja',
-            'Borracha',
-            'Lapis',
-            'Caderno',
-            'Caneta',
-            'Computador',
-            'Cadeira',
-            'Mesa',
-            'Copo',
-            'Prato',
-            'Garfo',
-            'Facas',
-            'Colher',
-            'Relogio',
-            'Celular',
-            'Livro',
-            'Oculos',
-            'Chave',
-            'Carteira',
-            'Escova de dente',
-            'Pasta de dente',
-            'Xampu',
-            'Sabonete',
-            'Toalha',
-            'Escova de cabelo',
-            'Camiseta',
-            'Calca',
-            'Tenis',
-            'Meias',
-            'Bone',
-            'Mochila',
-            'Garrafa de agua',
-            'Controle remoto',
-            'Lampada',
-            'Vela',
-            'Fosforos',
-            'Tesoura',
-            'Papel',
-            'Almofada',
-            'Cobertor',
-            'Travesseiro',
-            'Panela',
-            'Frigideira',
-            'Micro-ondas',
-            'Geladeira',
-            'Escova de maquiagem',
-            'Batom',
-            'Pente',
-            'Xicara',
-            'Prato fundo',
-            'Lousa',
-            'Giz',
-            'Papel higienico',
-            'Sabao em po',
-            'Esponja',
-            'Regua',
-            'Isqueiro',
-            'Gravata',
-            'Meio de transporte',
-            'Terninho',
-            'Vestido',
-            'Terno',
-            'Blusa',
-            'Caneca',
-            'Cadeado',
-            'Guarda-chuva',
-            'Panela de pressao',
-            'Porta-retrato',
-            'Quadro',
-            'Caneca',
-            'Fone de ouvido',
-            'Escova de limpeza',
-            'Vassoura',
-            'Pa',
-            'Espelho',
-            'Sapatos',
-            'Sapateira',
-            'Fone de ouvido',
-            'Bicicleta',
-            'Carro',
-            'Bola',
-            'Luvas',
-            'Violao',
-            'Cama',
-            'Lencol',
-            'Almofada de pescoco',
-            'Cobertor eletrico',
-            'Xadrez',
-            'Baralho',
-            'Roupao',
-            'Teclado',
-            'Mouse',
-            'Mousepad',
-            'Fone de ouvido sem fio',
-            'Balde',
-            'Pa',
-            'Balanca',
-            'Papel toalha',
-            'Cadeira de balanco',
-            'Piscina'
-        ];
+            'Albert Einstein',
+            'Marie Curie',
+            'Nelson Mandela',
+            'Mahatma Gandhi',
+            'Martin Luther King Jr.',
+            'Mother Teresa',
+            'Rosa Parks',
+            'Florence Nightingale',
+            'Jane Goodall',
+            'Charles Darwin',
+            'Thomas Edison',
+            'Leonardo da Vinci',
+            'Galileo Galilei',
+            'Isaac Newton',
+            'Winston Churchill',
+            'Helen Keller',
+            'Nikola Tesla',
+            'Amelia Earhart',
+            'Malala Yousafzai',
+            'Louis Pasteur',
+            'Stephen Hawking',
+            'Eleanor Roosevelt',
+            'Walt Disney',
+            'Bill Gates',
+            'J.K. Rowling',
+            'Nelson Mandela',
+            'Desmond Tutu',
+            'Mikhail Gorbachev',
+            'Oprah Winfrey',
+            'Audrey Hepburn',
+            'Abdus Sattar Edhi',
+            'Cesar Chavez',
+            'Kofi Annan',
+            'Jimmy Carter',
+            'Katherine Johnson',
+            'Jonas Salk',
+            'Alan Turing',
+            'Temple Grandin',
+            'Tim Berners-Lee',
+            'Wangari Maathai',
+            'Ludwig van Beethoven',
+            'Vincent van Gogh',
+            'Martha Graham',
+            'Florence Nightingale',
+            'Hippocrates',
+            'Confucius',
+            'Walt Whitman',
+            'Ernest Hemingway',
+            'George Orwell',
+            'Jane Austen',
+            'Leo Tolstoy',
+            'Pablo Picasso',
+            'Rembrandt',
+            'Frida Kahlo',
+            'Leonardo Fibonacci',
+            'Johann Sebastian Bach',
+            'Wolfgang Amadeus Mozart',
+            'Johannes Brahms',
+            'Ludwig van Beethoven',
+            'Pythagoras',
+            'Sigmund Freud',
+            'Carl Jung',
+            'Thomas Jefferson',
+            'George Washington',
+            'Abraham Lincoln',
+            'Franklin D. Roosevelt',
+            'Theodore Roosevelt',
+            'John F. Kennedy',
+            'Susan B. Anthony',
+            'Eleanor Roosevelt',
+            'Frederick Douglass',
+            'Harriet Tubman',
+            'Rosa Parks',
+            'Amelia Earhart',
+            'Anne Frank',
+            'Neil Armstrong',
+            'Mae Jemison',
+            'Louis Armstrong',
+            'Ella Fitzgerald',
+            'Nina Simone',
+            'Martin Luther King Jr.',
+            'Nelson Mandela',
+            'Desmond Tutu',
+            'Albert Schweitzer',
+            'Florence Nightingale',
+            'Clara Barton',
+            'Jonas Salk',
+            'Marie Curie',
+            'Rachel Carson',
+            'Dian Fossey',
+            'Jacques Cousteau',
+            'Jane Goodall',
+            'Barack Obama',
+            'Dalai Lama',
+            'Desmond Tutu',
+            'Malala Yousafzai',
+            'Aung San Suu Kyi',
+            'Cesar Chavez',
+            'Oscar Romero',
+            'Kofi Annan',
+            'Elie Wiesel',
+            'Mahatma Gandhi',
+            'Eleanor Roosevelt',
+            'Harvey Milk',
+            'Audrey Hepburn',
+            'Marian Anderson',
+            'Eleanor Roosevelt',
+            'Sojourner Truth',
+            'Harriet Beecher Stowe',
+            'Susan B. Anthony',
+            'Eleanor Roosevelt',
+            'Martha Graham',
+            'Maya Angelou',
+            'Gabriela Mistral',
+            'Margaret Atwood',
+            'Toni Morrison',
+            'Audre Lorde',
+            'Simone de Beauvoir',
+            'Virginia Woolf',
+            'Charlotte Brontë',
+            'Emily Dickinson',
+            'George Eliot',
+            'Anne Frank',
+            'Anne Bradstreet',
+            'Dorothy L. Sayers',
+            'Caroline Herschel',
+            'Rita Levi-Montalcini',
+            'Marie Stopes',
+            'Alice Ball',
+            'Barbara McClintock',
+            'Rosalind Franklin',
+            'Lise Meitner',
+            'Grace Hopper',
+            'Mary Jackson',
+            'Chien-Shiung Wu',
+            'Marie Tharp',
+            'Hedy Lamarr',
+            'Joan Clarke',
+            'Grace Hopper',
+            'Katherine Johnson',
+            'Henrietta Swan Leavitt',
+            'Lise Meitner',
+            'Mildred Dresselhaus',
+            'Rita Levi-Montalcini',
+            'Maria Goeppert-Mayer',
+            'Chien-Shiung Wu',
+            'Jane Goodall',
+            'Dian Fossey',
+            'Birute Galdikas',
+            'Sylvia Earle',
+            'Jacques Cousteau',
+            'Greta Thunberg',
+            'Rachel Carson',
+            'Theodore Roosevelt',
+            'David Attenborough',
+            'Stephen Hawking',
+            'Carl Sagan',
+            'Richard Feynman',
+            'Richard Dawkins',
+            'Bill Nye',
+            'Jane Goodall',
+            'Dian Fossey',
+            'Birute Galdikas',
+            'Sylvia Earle',
+            'Jacques Cousteau',
+            'Marie Curie',
+            'Max Planck',
+            'Niels Bohr',
+            'Erwin Schrödinger',
+            'Richard Feynman',
+            'Lise Meitner',
+            'Alan Turing',
+            'Linus Pauling',
+            'Marie Curie',
+            'Rosalind Franklin',
+            'Barbara McClintock',
+            'Dorothy Crowfoot Hodgkin',
+            'Dorothy Crowfoot Hodgkin',
+            'Barbara McClintock',
+            'Linus Pauling',
+            'John Bardeen',
+            'Marie Curie',
+            'Marie Curie',
+            'Emmy Noether',
+            'Rita Levi-Montalcini',
+            'Grace Hopper',
+            'Lise Meitner',
+            'Jane Goodall',
+            'Dian Fossey',
+            'Birute Galdikas',
+            'Sylvia Earle',
+            'Jacques Cousteau',
+            'Marie Curie',
+            'Max Planck',
+            'Niels Bohr',
+            'Erwin Schrödinger',
+            'Richard Feynman',
+            'Lise Meitner',
+            'Alan Turing',
+            'Linus Pauling',
+            'Marie Curie',
+            'Rosalind Franklin',
+            'Barbara McClintock',
+            'Dorothy Crowfoot Hodgkin',
+            'Dorothy Crowfoot Hodgkin',
+            'Barbara McClintock',
+            'Linus Pauling',
+            'John Bardeen',
+            'Marie Curie',
+            'Marie Curie',
+            'Emmy Noether',
+            'Rita Levi-Montalcini'
+        ]
+
+        function getRandomLanguage() {
+            const languages = ['inglês', 'espanhol', 'chinês', 'árabe', 'hindi', 'bengali', 'russo', 'português', 'indonésio', 'urdu', 'japonês', 'alemão', 'coreano', 'francês', 'turco'];
+            const randomIndex = Math.floor(Math.random() * languages.length);
+            return languages[randomIndex];
+        }
 
         const getRandomSearchQuery = () => {
-            const randomIndex = Math.floor(Math.random() * 3); // 0, 1, ou 2 aleatoriamente
+            const randomObjetoIndex = Math.floor(Math.random() * objetos.length);
+            const objeto = objetos[randomObjetoIndex];
+
+            const randomIndex = Math.floor(Math.random() * 20); // 0, 1, ou 2 aleatoriamente
+
             if (randomIndex === 0) {
-                return 'https://www.bing.com/search?q=como+usar+' + objetos[Math.floor(Math.random() * objetos.length)];
+                return 'https://www.bing.com/search?q=principais+feitos+' + objeto;
             } else if (randomIndex === 1) {
-                return 'https://www.bing.com/search?q=o+que+e+' + objetos[Math.floor(Math.random() * objetos.length)];
+                return 'https://www.bing.com/search?q=quais+desafios+enfrentou+' + objeto;
+            } else if (randomIndex === 2) {
+                return 'https://www.bing.com/search?q=influencia+na+sociedade+de+' + objeto;
+            } else if (randomIndex === 3) {
+                return 'https://www.bing.com/search?q=quais+crencas+tinha+' + objeto;
+            } else if (randomIndex === 4) {
+                return 'https://www.bing.com/search?q=eventos+marcantes+de+' + objeto;
+            } else if (randomIndex === 5) {
+                return 'https://www.bing.com/search?q=como+eh+lembrado+' + objeto;
+            } else if (randomIndex === 6) {
+                return 'https://www.bing.com/search?q=livros+associados+a+' + objeto;
+            } else if (randomIndex === 7) {
+                return 'https://www.bing.com/search?q=conexoes+esotericas+de+' + objeto;
+            } else if (randomIndex === 8) {
+                return 'https://www.bing.com/search?q=licoes+aprendidas+com+historia+de+' + objeto;
+            } else if (randomIndex === 9) {
+                return 'https://www.bing.com/search?q=principais+amigos+de+' + objeto;
+            } else if (randomIndex === 10) {
+                return 'https://www.bing.com/search?q=ambiente+cultural+de+' + objeto;
+            } else if (randomIndex === 11) {
+                return 'https://www.bing.com/search?q=educacao+e+formacao+de+' + objeto;
+            } else if (randomIndex === 12) {
+                return 'https://www.bing.com/search?q=controversias+sobre+' + objeto;
+            } else if (randomIndex === 13) {
+                return 'https://www.bing.com/search?q=hobbies+de+' + objeto;
+            } else if (randomIndex === 14) {
+                return 'https://www.bing.com/search?q=legado+artistico+de+' + objeto;
+            } else if (randomIndex === 15) {
+                return 'https://www.bing.com/search?q=influencia+da+tecnologia+na+vida+de+' + objeto;
+            } else if (randomIndex === 16) {
+                return 'https://www.bing.com/search?q=principais+momentos+de+virada+na+vida+de+' + objeto;
+            } else if (randomIndex === 17) {
+                return 'https://www.bing.com/search?q=legados+em+areas+especificas+de+' + objeto;
+            } else if (randomIndex === 18) {
+                return 'https://www.bing.com/search?q=lendas+e+mitos+sobre+' + objeto;
+            } else if (randomIndex === 19) {
+                return 'https://www.bing.com/search?q=outros+fatos+interessantes+sobre+' + objeto;
             } else {
-                return 'https://www.bing.com/search?q=para+que+serve+' + objetos[Math.floor(Math.random() * objetos.length)];
+                return 'https://www.bing.com/search?q=' + objeto;
             }
         };
 
         let linkButton = document.getElementById('linkButton');
 
         linkButton.addEventListener('click', () => {
-            const searchQuery = getRandomSearchQuery();
+            let searchQuery = getRandomSearchQuery();
+            let language = getRandomLanguage();
+            searchQuery = searchQuery + '+' + language;
             window.open(encodeURI(searchQuery), '_blank');
         });
     </script>
 </body>
 </html>
+
+
 ```
